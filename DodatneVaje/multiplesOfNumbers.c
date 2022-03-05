@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int vsota = 0;
+    
+    for(int i = 1; i < 1000; i++){   
+        if(i%3 == 0 || i%5 == 0){
+            vsota += i;
+        }
+    }
+    printf("%d\n", vsota);
+
+    return 0;
+}
