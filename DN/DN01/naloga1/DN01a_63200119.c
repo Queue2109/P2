@@ -8,6 +8,7 @@ int branjeVhoda() {
         if(temp != 32 && temp != '\n') {
             if(temp != 45) {
                 temp -= '0';
+            
                 stevilo += temp;
                 stevilo *= 10;
             } else {
@@ -24,20 +25,21 @@ int branjeVhoda() {
 
 void pisanjeIzhoda(int a, int b) {
 
-    int vsota = a + b;
-    int stMest = 1;
+    long long vsota = a + b;
+    long long stMest = 1;
+    
 
     if(vsota < 0) {
         putchar('-');
         vsota *= -1;
     }
     
-    while((vsota / stMest) > 10) {
+    while((vsota / stMest) >= 10) {
         stMest *= 10;
     }
     
     while(stMest != 0) {
-        int izpis = vsota / stMest;
+        long long izpis = vsota / stMest;
         putchar(izpis + '0');
         vsota -= (stMest * izpis);
         stMest /= 10;
