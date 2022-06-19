@@ -1,8 +1,3 @@
-
-/*
- * Re"sitev naloge Problem nahrbtnika 2
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
